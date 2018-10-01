@@ -39,7 +39,7 @@ class Ball(pygame.sprite.Sprite):
 
     def grow(self, growbool):
         if growbool == True:
-            self.rect.inflate_ip(2, 2)
+            self.rect.inflate_ip(2, 2) 
             self.sizex +=2
             self.sizey +=2
             self.image = pygame.transform.scale(pygame.image.load('ball.png'), (self.sizex,self.sizey))
